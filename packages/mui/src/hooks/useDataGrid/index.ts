@@ -193,6 +193,8 @@ export function useDataGrid<
     const [muiCrudFilters, setMuiCrudFilters] = useState<CrudFilters>(filters);
 
     const { data, isFetched, isLoading } = tableQueryResult;
+    console.log(tableQueryResult);
+    console.error(tableQueryResult);
 
     const isServerSideFilteringEnabled =
         (filtersFromProp?.mode || "server") === "server";
